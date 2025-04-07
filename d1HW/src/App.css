@@ -1,0 +1,76 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-page layout */
+.container {
+  min-height: 100vh;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Font scaling based on viewport width */
+.heading {
+  font-size: 5vw;
+  margin-bottom: 2vw;
+}
+
+.description {
+  font-size: 2vw;
+  margin-bottom: 3vw;
+}
+
+.topic {
+  margin-bottom: 3vw;
+}
+
+.link {
+  color: #0645AD;
+  font-size: 2.5vw;
+  text-decoration: underline;
+}
+
+.subtext {
+  font-size: 1.8vw;
+  margin-top: 0.5vw;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 8vw;
+  }
+
+  .description,
+  .link,
+  .subtext {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 4vw;
+  }
+
+  .heading {
+    font-size: 10vw;
+  }
+
+  .description,
+  .link,
+  .subtext {
+    font-size: 5vw;
+  }
+}
